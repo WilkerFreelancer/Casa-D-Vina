@@ -264,11 +264,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				</div>
 				<div class="elementor-element elementor-element-b53994a elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-widget elementor-widget-text-editor" data-id="b53994a" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-					<p><strong>Para atender às suas necessidades, apresentamos o mix de produtos Lanchonete/Food Service Diviníssimo.</strong> Ideal para bares, padarias e lanchonetes, essa linha inclui <strong>Pães de Queijo</strong>, <strong>Cigarretes de Presunto e Muçarela</strong>, <strong>Coxinhas de Filé de Frango</strong> (com ou sem recheio de Requeijão), <strong>Quibes Recheados</strong> (com Carne ou Requeijão), <strong>Risoles de Milho e Requeijão</strong>, e <strong>Tortinhas de Filé de Frango</strong> (com ou sem recheio de Requeijão). Os <strong>Pães de Queijo</strong> estão disponíveis em embalagens de <strong>3kg</strong>, os salgados bufê em <strong>2kg</strong>, e os salgados para lanche em pacotes de <strong>15 ou 20 unidades</strong>.</p>
+					<p>Na linha de <strong>food service</strong>, a <strong>Casa D’Vina</strong> oferece <strong>pães de queijo</strong> <strong>tradicional</strong> e <strong>recheados</strong>, <strong>salgados para fritar</strong> e também <strong>salgados fritos</strong> e <strong>congelados prontos</strong> para <strong>aquecer</strong> e <strong>servir</strong>. Essa linha foi desenvolvida especialmente para <strong>lanchonetes</strong>, <strong>padarias</strong>, <strong>bares</strong> e <strong>restaurantes</strong> que buscam <strong>qualidade</strong> e <strong>praticidade</strong>. Com nosso <strong>portfólio</strong>, estabelecimentos podem elevar seu <strong>cardápio</strong> com o autêntico <strong>sabor caseiro</strong> que remete à <strong>infância</strong> e ao <strong>carinho</strong> das <strong>receitas de vó</strong>.</p>
 				</div>
 					</div>
 				</div>
-		<div class="elementor-element elementor-element-9dcd6d4 e-con-full elementor-hidden-mobile e-flex elementor-invisible e-con e-child" data-id="9dcd6d4" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;position&quot;:&quot;absolute&quot;,&quot;animation&quot;:&quot;fadeInRight&quot;}" style="background-image: url('produtos/coixinha\ de\ frango\ 2.webp'); >
+		<div class="elementor-element elementor-element-9dcd6d4 e-con-full elementor-hidden-mobile e-flex elementor-invisible e-con e-child" data-id="9dcd6d4" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;position&quot;:&quot;absolute&quot;,&quot;animation&quot;:&quot;fadeInRight&quot;}" style="background-image: url('produtos/Imagem\ Nova\ Salgado.png'); >
 				<div class="elementor-element elementor-element-4abe65c elementor-widget elementor-widget-spacer" data-id="4abe65c" data-element_type="widget" data-widget_type="spacer.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-spacer">
@@ -336,12 +336,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						
 					
 							/* Estilos do título */
-							h1 {
-								font-size: 36px;
-								text-align: center;
-								color: #cc0033;
-								margin-bottom: 40px;
-							}
+h1 {
+    font-size: 36px;
+    text-align: center;
+    color: #cc0033;
+    margin-bottom: 40px;
+    width: 100%; /* Faz com que o elemento ocupe toda a largura do seu contêiner pai */
+    position: relative; /* Define o posicionamento relativo do título */
+    left: 50%; /* Move o título para a direita 50% do seu contêiner pai */
+    transform: translateX(-50%); /* Ajusta o título para que fique centralizado */
+}
+
 					
 							/* Contêiner dos produtos */
 							.produtos {
@@ -428,90 +433,95 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					</head>
 					<body>
 					
-						<h1>Linha Salgado Bufê</h1>
+						<h1>Linha Salgados Bufê Para você fritar</h1>
 						<div id="produtos" class="produtos"></div>
 					
 						<script>
 							// Lista de produtos com descrição detalhada
 							const produtos = [
-							{
-						nome: 'Salgado de Carne - 5kg',
-						descricao: [
-	'Salgado empanado, de massa cozida, com recheio à base de carne bovina moída.',
-	'Contém glúten.',
-	'Contém lactose.'
-],
-
-						imagem: 'produtos/salgado de carne.webp',
-						link: 'https://www.instagram.com/direct/t/17844945560876921/'
-					},{
-						nome: 'Salgado de Requeijão com Milho - 5kg',
-						descricao: [
-	'Salgado empanado, de massa cozida, com recheio à base de requeijão com milho.',
-	'Contém glúten.',
-	'Contém lactose.'
-],
-
-						imagem: 'produtos/salgado de requeijao.webp',link: 'https://www.instagram.com/direct/t/17844945560876921/'
-					},{
-						nome: 'Salgado de Azeitona - 5kg',
-						descricao: [
-	'Salgado empanado, de massa cozida, com recheio à base de requeijão com azeitona.',
-	'Contém glúten.',
-	'Contém lactose.'],
-
-						imagem: 'produtos/salgado de azeitona.webp',
-						link: 'https://www.instagram.com/direct/t/17844945560876921/'
-					},{
-						
-		"nome": "Coxinha de Frango - 5kg",
-		"descricao": [
-			"Salgado empanado, de massa cozida, com recheio à base de creme de frango com requeijão.",
-			"Contém glúten.",
-			"Contém lactose."
-		],
-		"imagem": 'produtos/coixinha de frango.webp',
-		"link": 'https://www.instagram.com/direct/t/17844945560876921/'
-	},
 	{
-		"nome": "Bolinha Napolitana - 5kg",
-		"descricao": [
-			"Salgado empanado, de massa cozida, com recheio à base de presunto e muçarela.",
-			"Contém glúten.",
-			"Contém lactose."
-		],
-		"imagem": 'produtos/bolinha napolitana.webp',	"link": 'https://www.instagram.com/direct/t/17844945560876921/'
-	},
-	{
-		"nome": "Bolinha de Queijo - 5kg",
+		"nome": "Bolinha de Queijo - 3kg",
 		"descricao": [
 			"Salgado empanado, de massa cozida, com recheio à base de muçarela.",
 			"Contém glúten.",
 			"Contém lactose."
 		],
-		"imagem": 'produtos/bolinha de queijo.webp',
-		"link": 'https://www.instagram.com/direct/t/17844945560876921/'
-	},  {
-		"nome": "Quibe Recheado com Requeijão - 5Kg",
+		"imagem": "produtos/bolinha de queijo.webp",
+		"link": "https://www.instagram.com/direct/t/17844945560876921/"
+	},
+	{
+		"nome": "Bolinha Napolitana - 3kg",
 		"descricao": [
-			"Salgado à base de trigo para quibe, carne bovina, especiarias e recheado com requeijão.",
+			"Salgado empanado, de massa cozida, com recheio à base de presunto e muçarela.",
 			"Contém glúten.",
 			"Contém lactose."
 		],
-		"imagem": 'produtos/quibe 1.webp',
-		"link": 'https://www.instagram.com/direct/t/17844945560876921/'
+		"imagem": "produtos/bolinha napolitana.webp",
+		"link": "https://www.instagram.com/direct/t/17844945560876921/"
 	},
 	{
-		"nome": "Empada de Frango - 5Kg",
+		"nome": "Coxinha de Frango - 3kg",
+		"descricao": [
+			"Salgado empanado, de massa cozida, com recheio à base de creme de frango com requeijão.",
+			"Contém glúten.",
+			"Contém lactose."
+		],
+		"imagem": "produtos/coixinha de frango.webp",
+		"link": "https://www.instagram.com/direct/t/17844945560876921/"
+	},
+	{
+		"nome": "Empada de Frango (Basta aquecer) - 3kg",
 		"descricao": [
 			"Salgado assado, de massa amanteigada, com recheio à base de filé de frango com requeijão.",
 			"Contém glúten.",
 			"Contém lactose."
 		],
-		"imagem": 'produtos/empanado.webp',
-		"link": 'https://www.instagram.com/direct/t/17844945560876921/'
-	}	
-							];
+		"imagem": "produtos/empanado.webp",
+		"link": "https://www.instagram.com/direct/t/17844945560876921/"
+	},
+	{
+		"nome": "Quibe Recheado com Requeijão - 3kg",
+		"descricao": [
+			"Salgado à base de trigo para quibe, carne bovina, especiarias e recheado com requeijão.",
+			"Contém glúten.",
+			"Contém lactose."
+		],
+		"imagem": "produtos/quibe 1.webp",
+		"link": "https://www.instagram.com/direct/t/17844945560876921/"
+	},
+	{
+		"nome": "Salgado de Azeitona - 3kg",
+		"descricao": [
+			"Salgado empanado, de massa cozida, com recheio à base de requeijão com azeitona.",
+			"Contém glúten.",
+			"Contém lactose."
+		],
+		"imagem": "produtos/salgado de azeitona.webp",
+		"link": "https://www.instagram.com/direct/t/17844945560876921/"
+	},
+	{
+		"nome": "Salgado de Carne - 3kg",
+		"descricao": [
+			"Salgado empanado, de massa cozida, com recheio à base de carne bovina moída.",
+			"Contém glúten.",
+			"Contém lactose."
+		],
+		"imagem": "produtos/salgado de carne.webp",
+		"link": "https://www.instagram.com/direct/t/17844945560876921/"
+	},
+	{
+		"nome": "Salgado de Requeijão com Milho - 3kg",
+		"descricao": [
+			"Salgado empanado, de massa cozida, com recheio à base de requeijão com milho.",
+			"Contém glúten.",
+			"Contém lactose."
+		],
+		"imagem": "produtos/salgado de requeijao.webp",
+		"link": "https://www.instagram.com/direct/t/17844945560876921/"
+	}
+]
+
+									
 					
 							// Função para gerar o HTML dos produtos
 							function gerarProdutos() {
@@ -537,17 +547,180 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							// Chama a função para gerar os produtos ao carregar a página
 							gerarProdutos();
 						</script>
+		<style>
+			/* Estilos do título */
+			/* Estilos do título */
+h1 {
+    font-size: 36px;
+    text-align: center;
+    color: #cc0033;
+    margin-bottom: 40px;
+    width: 100%; /* Faz com que o elemento ocupe toda a largura do seu contêiner pai */
+    position: relative; /* Define o posicionamento relativo do título */
+    left: 50%; /* Move o título para a direita 50% do seu contêiner pai */
+    transform: translateX(-50%); /* Ajusta o título para que fique centralizado */
+}
+
+			/* Contêiner dos produtos */
+			.colecao-produtos {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 20px;
+				justify-content: center;
+				max-width: 1200px;
+				margin: 0 auto;
+			}
+		
+			/* Estilos de cada produto */
+			.produto-item {
+				flex: 0 0 calc(100% - 40px);
+				border: 1px solid #e0e0e0;
+				padding: 20px;
+				background-color: #fff;
+				box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+				border-radius: 10px;
+				display: flex;
+				gap: 20px;
+				transition: transform 0.2s, box-shadow 0.2s;
+				text-align: left;
+			}
+		
+			/* Efeito de hover */
+			.produto-item:hover {
+				transform: scale(1.03);
+				box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+			}
+		
+			/* Estilo da imagem do produto */
+			.produto-item img {
+				width: 150px;
+				height: auto;
+				border-radius: 8px;
+			}
+		
+			/* Conteúdo do produto */
+			.detalhes-produto {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+			}
+		
+			.titulo-produto {
+				font-size: 22px;
+				margin: 0 0 10px;
+				color: #cc0033;
+				font-weight: bold;
+			}
+		
+			.descricao-produto {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+				font-size: 16px;
+				color: #555;
+				line-height: 1.5;
+			}
+		
+			.descricao-produto li {
+				margin: 5px 0;
+			}
+		
+			/* Estilos responsivos */
+			@media (max-width: 768px) {
+				.produto-item {
+					flex-direction: column;
+					align-items: center;
+				}
+		
+				.produto-item img {
+					margin-bottom: 15px;
+				}
+		
+				.detalhes-produto {
+					align-items: center;
+				}
+			}
+		</style>
+		
+		<h1>Salgados Lanches</h1>
+		<div id="colecaoProdutos" class="colecao-produtos"></div>
+		
+		<script>
+			const produtosCatalogo = [
+				{
+					"nome": "Coxinha de Frango -  (pacote com 10 unidades)",
+					"descricao": [
+						"Salgado empanado, de massa cozida, com recheio à base de creme de frango com requeijão.",
+						"Contém glúten.",
+						"Contém lactose.",
+						"Aproximadamente 10 unidades ."
+					],
+					"imagem": 'produtos/coixinha de frango 2.webp',
+					"link": 'https://www.instagram.com/direct/t/17844945560876921/'
+				},
+				{
+					"nome": "Enrolado de Presunto e Muçarela -  (pacote com 10 unidades)",
+					"descricao": [
+						"Salgado assado, com recheio à base de presunto e muçarela.",
+						"Contém glúten.",
+						"Contém lactose.",
+						"Aproximadamente 10 unidades."
+					],
+					"imagem": 'produtos/enroladinho.webp',
+					"link": 'https://www.instagram.com/direct/t/17844945560876921/'
+				},
+				
+				{
+					"nome": "Quibe Recheado com Requeijão -  (pacote com 10 unidades)",
+					"descricao": [
+						"Salgado à base de trigo para quibe, carne bovina, especiarias e recheado com requeijão.",
+						"Contém glúten.",
+						"Contém lactose.",
+						"Aproximadamente 10 unidades ."
+					],
+					"imagem": 'produtos/quibe 2.webp',
+					"link": 'https://www.instagram.com/direct/t/17844945560876921/'
+				}
+			];
+		
+			function gerarProdutos() {
+				const container = document.getElementById('colecaoProdutos');
+		
+				// Ordenar produtos em ordem alfabética pelo nome
+				produtosCatalogo.sort((a, b) => a.nome.localeCompare(b.nome));
+		
+				produtosCatalogo.forEach(produto => {
+					const produtoHTML = `
+						<div class="produto-item">
+						
+							<div class="detalhes-produto">
+								<h2 class="titulo-produto">${produto.nome}</h2>
+								<ul class="descricao-produto">
+									${produto.descricao.map(item => `<li>${item}</li>`).join('')}
+								</ul>
+							</div>
+						</div>
+					`;
+					container.innerHTML += produtoHTML;
+				});
+			}
+		
+			gerarProdutos();
+		</script>
 		
 					<style>
-					
-						/* Estilos do título */
-						h1 {
-							font-size: 36px;
-							text-align: center;
-							color: #cc0033;
-							margin-bottom: 40px;
-						}
-				
+					/* Estilos do título */
+h1 {
+    font-size: 36px;
+    text-align: center;
+    color: #cc0033;
+    margin-bottom: 40px;
+    width: 100%; /* Faz com que o elemento ocupe toda a largura do seu contêiner pai */
+    position: relative; /* Define o posicionamento relativo do título */
+    left: 50%; /* Move o título para a direita 50% do seu contêiner pai */
+    transform: translateX(-50%); /* Ajusta o título para que fique centralizado */
+}
+
 						/* Contêiner dos produtos */
 						.catalogo-produtos {
 							display: flex;
@@ -632,44 +805,44 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				</head>
 				<body>
 				
-					<h1>Familia Pão de Queijo</h1>
+					<h1>Pães de Queijo</h1>
 					<div id="catalogoProdutos" class="catalogo-produtos"></div>
 				
 					<script>
 						// Lista de produtos com descrição detalhada
 						const itensCatalogo = [
-						{
-				nome: 'Pão de Queijo Recheado de Frango com Requeijão - 5kg',
-				descricao: [
-					'Pão de queijo à base de polvilho, fécula de mandioca, queijo meia cura, gordura e ovos.',
-					'Recheado com um creme de frango com requeijão.',
-					'Não contém glúten'
-				],
-				imagem: 'produtos/pao de queijo 1.webp ',
-				link: 'https://www.instagram.com/direct/t/17844945560876921/'
-			},
-			{
-				nome: 'Pão de Queijo de Calabresa - 5kg',
-				descricao: [
-	'Pão de queijo à base de polvilho, fécula de mandioca, queijo meia cura, gordura e ovos.',
-	'Pão de queijo recheado com calabresa.',
-	'Não contém glúten'
-],
+								{
+		"nome": "Pão de Queijo Tradicional - 3kg",
+		"descricao": [
+			"Pão de queijo à base de polvilho, fécula de mandioca, queijo meia cura, gordura e ovos.",
+			"Não contém glúten"
+		],
+		"imagem": "produtos/pao de queijo 3.webp",
+		"link": "https://www.instagram.com/direct/t/17844945560876921/"
+	},
+	{
+		"nome": "Pão de Queijo Recheado de Frango com Requeijão - 3kg",
+		"descricao": [
+			"Pão de queijo à base de polvilho, fécula de mandioca, queijo meia cura, gordura e ovos.",
+			"Recheado com um creme de frango com requeijão.",
+			"Não contém glúten"
+		],
+		"imagem": "produtos/pao de queijo 1.webp",
+		"link": "https://www.instagram.com/direct/t/17844945560876921/"
+	},
+	{
+		"nome": "Pão de  Queijo Recheado de Calabresa - 3kg",
+		"descricao": [
+			"Pão de queijo à base de polvilho, fécula de mandioca, queijo meia cura, gordura e ovos.",
+			"Pão de queijo recheado com calabresa.",
+			"Não contém glúten"
+		],
+		"imagem": "produtos/pao de queijo 2.webp",
+		"link": "https://www.instagram.com/direct/t/17844945560876921/"
+	},
 
-imagem: 'produtos/pao de queijo 2.webp ',
-link: 'https://www.instagram.com/direct/t/17844945560876921/'
-			},
-			{
-				nome: 'Pão de Queijo Tradicional - 5kg',
-				descricao: [
-	'Pão de queijo à base de polvilho, fécula de mandioca, queijo meia cura, gordura e ovos.',
-	'Não contém glúten'
-],
+]
 
-imagem: 'produtos/pao de queijo 3.webp ',				
-link: 'https://www.instagram.com/direct/t/17844945560876921/'
-			}
-						];
 				
 						// Função para gerar o HTML dos produtos
 						function gerarProdutos() {
@@ -697,174 +870,7 @@ link: 'https://www.instagram.com/direct/t/17844945560876921/'
 						
 </body>
 
-    <style>
-    
-        /* Estilos do título */
-        h1 {
-            font-size: 36px;
-            text-align: center;
-            color: #cc0033;
-            margin-bottom: 40px;
-        }
-
-        /* Contêiner dos produtos */
-        .colecao-produtos {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        /* Estilos de cada produto */
-        .produto-item {
-            flex: 0 0 calc(100% - 40px);
-            border: 1px solid #e0e0e0;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            display: flex;
-            gap: 20px;
-            transition: transform 0.2s, box-shadow 0.2s;
-            text-align: left;
-        }
-
-        /* Efeito de hover */
-        .produto-item:hover {
-            transform: scale(1.03);
-            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
-        }
-
-        /* Estilo da imagem do produto */
-        .produto-item img {
-            width: 150px;
-            height: auto;
-            border-radius: 8px;
-        }
-
-        /* Conteúdo do produto */
-        .detalhes-produto {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .titulo-produto {
-            font-size: 22px;
-            margin: 0 0 10px;
-            color: #cc0033;
-            font-weight: bold;
-        }
-
-        .descricao-produto {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            font-size: 16px;
-            color: #555;
-            line-height: 1.5;
-        }
-
-        .descricao-produto li {
-            margin: 5px 0;
-        }
-
-        /* Estilos responsivos */
-        @media (max-width: 768px) {
-            .produto-item {
-                flex-direction: column;
-                align-items: center;
-       
-            }
-
-            .produto-item img {
-                margin-bottom: 15px;
-            }
-
-            .detalhes-produto {
-                align-items: center;
-            }
-        }
-    </style>
-</head>
-<body>
-
-    <h1>Salgados Lanches</h1>
-    <div id="colecaoProdutos" class="colecao-produtos"></div>
-
-    <script>
-        // Lista de produtos com descrição detalhada
-        const produtosCatalogo = [
-
-    {
-        "nome": "Coxinha de Frango -  (pacote com 10 unidades)",
-        "descricao": [
-            "Salgado empanado, de massa cozida, com recheio à base de creme de frango com requeijão.",
-            "Contém glúten.",
-            "Contém lactose.",
-            "Aproximadamente 10 unidades ."
-        ],
-        "imagem": 'produtos/coixinha de frango 2.webp',"link": 'https://www.instagram.com/direct/t/17844945560876921/'
-    },
-    {
-        "nome": "Enrolado de Presunto e Muçarela -  (pacote com 10 unidades)",
-        "descricao": [
-            "Salgado assado, com recheio à base de presunto e muçarela.",
-            "Contém glúten.",
-            "Contém lactose.",
-            "Aproximadamente 10 unidades."
-        ],
-        "imagem": 'produtos/enroladinho.webp',"link": 'https://www.instagram.com/direct/t/17844945560876921/'
-    },
-    {
-        "nome": "Pastel de Carne -  (pacote com 10 unidades)",
-        "descricao": [
-            "Salgado frito, com recheio à base de carne temperada.",
-            "Contém glúten.",
-            "Contém lactose.",
-            "Aproximadamente 10 unidades ."
-        ],
-        "imagem": 'produtos/pastel de carne.webp',
-        "link": 'https://www.instagram.com/direct/t/17844945560876921/'
-    },
-    {
-        "nome": "Quibe Recheado com Requeijão -  (pacote com 10 unidades)",
-        "descricao": [
-            "Salgado à base de trigo para quibe, carne bovina, especiarias e recheado com requeijão.",
-            "Contém glúten.",
-            "Contém lactose.",
-            "Aproximadamente 10 unidades ."
-        ],
-        "imagem": 'produtos/quibe 2.webp',
-		"link": 'https://www.instagram.com/direct/t/17844945560876921/'
-    }
-]
-
-
-        // Função para gerar o HTML dos produtos
-        function gerarProdutos() {
-            const container = document.getElementById('colecaoProdutos');
-            produtosCatalogo.forEach(produto => {
-                const produtoHTML = `
-                    <div class="produto-item">
-                    
-                        <div class="detalhes-produto">
-                            <h2 class="titulo-produto">${produto.nome}</h2>
-                            <ul class="descricao-produto">
-                                ${produto.descricao.map(item => `<li>${item}</li>`).join('')}
-                            </ul>
-                        </div>
-                    </div>
-                `;
-                container.innerHTML += produtoHTML;
-            });
-        }
-
-        // Chama a função para gerar os produtos ao carregar a página
-        gerarProdutos();
-    </script>
+   
 
 
 <div class="e-load-more-anchor" data-page="1" data-max-page="2" data-next-page="https://divinissimo.com.br/salgados-bufe/2/"></div>

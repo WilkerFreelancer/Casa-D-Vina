@@ -168,7 +168,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<div class="elementor-element elementor-element-a4be6e7 elementor-nav-menu__align-end elementor-nav-menu--stretch elementor-nav-menu__text-align-center elementor-widget-tablet__width-inherit elementor-nav-menu--dropdown-tablet elementor-nav-menu--toggle elementor-nav-menu--burger elementor-widget elementor-widget-nav-menu" data-id="a4be6e7" data-element_type="widget" data-settings="{&quot;full_width&quot;:&quot;stretch&quot;,&quot;layout&quot;:&quot;horizontal&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;svg class=\&quot;e-font-icon-svg e-fas-caret-down\&quot; viewBox=\&quot;0 0 320 512\&quot; xmlns=\&quot;http:\/\/www.w3.org\/2000\/svg\&quot;&gt;&lt;path d=\&quot;M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z\&quot;&gt;&lt;\/path&gt;&lt;\/svg&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;},&quot;toggle&quot;:&quot;burger&quot;}" data-widget_type="nav-menu.default">
 				<div class="elementor-widget-container">
 						<nav aria-label="Menu" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-none">
-				<ul id="menu-1-a4be6e7" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-112"><a href="empresa.html" class="elementor-item"><img src="https://divinissimo.com.br/wp-content/uploads/2023/05/icones-01.svg" class="_mi _before _svg" aria-hidden="true" alt=""00 style="width:1.25em;"/><span>Empresa</span></a></li>
+				<ul id="menu-1-a4be6e7" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-112"><a href="empresa.html" class="elementor-item"><img src="" class="_mi _before _svg" aria-hidden="true" alt=""00 style="width:1.25em;"/><span>Empresa</span></a></li>
 <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-1944"><a class="elementor-item"><img src="https://divinissimo.com.br/wp-content/uploads/2023/05/icones-02.svg" class="_mi _before _svg" aria-hidden="true" alt=""00 style="width:1.1em;"/><span>Produtos</span></a>
     <ul class="sub-menu elementor-nav-menu--dropdown">
         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5098"><a href="pao.html" class="elementor-sub-item">Pães de Queijo</a></li>
@@ -339,13 +339,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<style>
 			
 				/* Estilos do título */
-				h1 {
-					font-size: 36px;
-					text-align: center;
-					color: #cc0033;
-					margin-bottom: 40px;
-				}
-		
+h1 {
+    font-size: 36px;
+    text-align: center;
+    color: #cc0033;
+    margin-bottom: 40px;
+    width: 100%; /* Faz com que o elemento ocupe toda a largura do seu contêiner pai */
+    position: relative; /* Define o posicionamento relativo do título */
+    left: 50%; /* Move o título para a direita 50% do seu contêiner pai */
+    transform: translateX(-50%); /* Ajusta o título para que fique centralizado */
+}
+
 				/* Contêiner dos produtos */
 				.produtos {
 					display: flex;
@@ -436,50 +440,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		
 			<script>
 				// Lista de produtos com descrição detalhada
-				const produtos = [
-					{
-						nome: 'Salgado de Carne - 500g',
-						descricao: [
-	'Salgado empanado, de massa cozida, com recheio à base de carne bovina moída.',
-	'Contém glúten.',
-	'Contém lactose.',
-	'Aproximadamente 20 unidades - média 25g cada'
-],
-
-						imagem: 'produtos/salgado de carne.webp',
-						link: 'https://www.instagram.com/direct/t/17844945560876921/'
-					},{
-						nome: 'Salgado de Requeijão com Milho - 500g',
-						descricao: [
-	'Salgado empanado, de massa cozida, com recheio à base de requeijão com milho.',
-	'Contém glúten.',
-	'Contém lactose.',
-	'Aproximadamente 20 unidades - média 25g cada'
-],
-
-						imagem: 'produtos/salgado de requeijao.webp',link: 'https://www.instagram.com/direct/t/17844945560876921/'
-					},{
-						nome: 'Salgado de Azeitona - 500g',
-						descricao: [
-	'Salgado empanado, de massa cozida, com recheio à base de requeijão com azeitona.',
-	'Contém glúten.',
-	'Contém lactose.',
-	'Aproximadamente 20 unidades - média 25g cada'
-],
-
-						imagem: 'produtos/salgado de azeitona.webp',
-						link: 'https://www.instagram.com/direct/t/17844945560876921/'
-					},{
-						
-		"nome": "Coxinha de Frango - 500g",
+				const produtos = 
+				[
+	{
+		"nome": "Bolinha de Queijo - 500g",
 		"descricao": [
-			"Salgado empanado, de massa cozida, com recheio à base de creme de frango com requeijão.",
+			"Salgado empanado, de massa cozida, com recheio à base de muçarela.",
 			"Contém glúten.",
 			"Contém lactose.",
 			"Aproximadamente 20 unidades - média 25g cada."
 		],
-		"imagem": 'produtos/coixinha de frango.webp',
-		"link": 'https://www.instagram.com/direct/t/17844945560876921/'
+		"imagem": "produtos/bolinha de queijo.webp",
+		"link": "https://www.instagram.com/direct/t/17844945560876921/"
 	},
 	{
 		"nome": "Bolinha Napolitana - 500g",
@@ -489,28 +461,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			"Contém lactose.",
 			"Aproximadamente 20 unidades - média 25g cada."
 		],
-		"imagem": 'produtos/bolinha napolitana.webp',	"link": 'https://www.instagram.com/direct/t/17844945560876921/'
+		"imagem": "produtos/bolinha napolitana.webp",
+		"link": "https://www.instagram.com/direct/t/17844945560876921/"
 	},
 	{
-		"nome": "Bolinha de Queijo - 500g",
+		"nome": "Coxinha de Frango - 500g",
 		"descricao": [
-			"Salgado empanado, de massa cozida, com recheio à base de muçarela.",
+			"Salgado empanado, de massa cozida, com recheio à base de creme de frango com requeijão.",
 			"Contém glúten.",
 			"Contém lactose.",
 			"Aproximadamente 20 unidades - média 25g cada."
 		],
-		"imagem": 'produtos/bolinha de queijo.webp',
-		"link": 'https://www.instagram.com/direct/t/17844945560876921/'
-	},  {
-		"nome": "Quibe Recheado com Requeijão - 500g",
-		"descricao": [
-			"Salgado à base de trigo para quibe, carne bovina, especiarias e recheado com requeijão.",
-			"Contém glúten.",
-			"Contém lactose.",
-			"Aproximadamente 25 unidades - média 20g cada."
-		],
-		"imagem": 'produtos/quibe 1.webp',
-		"link": 'https://www.instagram.com/direct/t/17844945560876921/'
+		"imagem": "produtos/coixinha de frango.webp",
+		"link": "https://www.instagram.com/direct/t/17844945560876921/"
 	},
 	{
 		"nome": "Empada de Frango - 400g",
@@ -520,11 +483,55 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			"Contém lactose.",
 			"Aproximadamente 15 unidades - média 25g cada."
 		],
-		"imagem": 'produtos/empanado.webp',
-		"link": 'https://www.instagram.com/direct/t/17844945560876921/'
-	}		
-				];
-		
+		"imagem": "produtos/empanado.webp",
+		"link": "https://www.instagram.com/direct/t/17844945560876921/"
+	},
+	{
+		"nome": "Quibe Recheado com Requeijão - 500g",
+		"descricao": [
+			"Salgado à base de trigo para quibe, carne bovina, especiarias e recheado com requeijão.",
+			"Contém glúten.",
+			"Contém lactose.",
+			"Aproximadamente 25 unidades - média 20g cada."
+		],
+		"imagem": "produtos/quibe 1.webp",
+		"link": "https://www.instagram.com/direct/t/17844945560876921/"
+	},
+	{
+		"nome": "Salgado de Azeitona - 500g",
+		"descricao": [
+			"Salgado empanado, de massa cozida, com recheio à base de requeijão com azeitona.",
+			"Contém glúten.",
+			"Contém lactose.",
+			"Aproximadamente 20 unidades - média 25g cada."
+		],
+		"imagem": "produtos/salgado de azeitona.webp",
+		"link": "https://www.instagram.com/direct/t/17844945560876921/"
+	},
+	{
+		"nome": "Salgado de Carne - 500g",
+		"descricao": [
+			"Salgado empanado, de massa cozida, com recheio à base de carne bovina moída.",
+			"Contém glúten.",
+			"Contém lactose.",
+			"Aproximadamente 20 unidades - média 25g cada."
+		],
+		"imagem": "produtos/salgado de carne.webp",
+		"link": "https://www.instagram.com/direct/t/17844945560876921/"
+	},
+	{
+		"nome": "Salgado de Requeijão com Milho - 500g",
+		"descricao": [
+			"Salgado empanado, de massa cozida, com recheio à base de requeijão com milho.",
+			"Contém glúten.",
+			"Contém lactose.",
+			"Aproximadamente 20 unidades - média 25g cada."
+		],
+		"imagem": "produtos/salgado de requeijao.webp",
+		"link": "https://www.instagram.com/direct/t/17844945560876921/"
+	}
+]
+
 				// Função para gerar o HTML dos produtos
 				function gerarProdutos() {
 					const container = document.getElementById('produtos');
