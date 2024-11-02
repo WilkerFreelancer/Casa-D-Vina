@@ -151,9 +151,17 @@ div, p, span, strong, a {
 }
 .elementor-10669 .elementor-element.elementor-element-ade0e4b:not(.elementor-motion-effects-element-type-background), .elementor-10669 .elementor-element.elementor-element-ade0e4b>.elementor-motion-effects-container>.elementor-motion-effects-layer {
     /* background-color: var(--e-global-color-secondary); */
-    background-color: #000080
+    background-color: #0b203f
 	!important;
 }
+@media (max-width: 1209px) {
+    .elementor-10669 .elementor-element.elementor-element-65e00ad.e-con {
+        display: flex; /* Define um contexto flexível para o alinhamento */
+        align-items: center; /* Alinha os itens verticalmente ao centro */
+        justify-content: center; /* Alinha os itens horizontalmente ao centro */
+    }
+}
+
 .elementor-10669 .elementor-element.elementor-element-01563ca .elementor-button {
     font-family: "Congenial", Sans-serif;
     font-size: 1.25em;
@@ -165,12 +173,23 @@ div, p, span, strong, a {
     font-family: "Congenial", Sans-serif;
     font-size: 1.25em;
     font-weight: 600;
-    background-color: #0b203f
+	background-color: #0b203f
 	!important;;
     border-radius: 8px;
 }
 .aceitar_cookies_bt:hover {
     background-color: #0077a1;
+	@media (max-width: 768px) { /* Ajuste a largura conforme necessário */
+    .break-line {
+        display: block; /* Faz o <br> aparecer */
+    }
+}
+
+.break-line {
+        display: none; /* Faz o <br> não aparecer */
+ 
+}
+
 }</style></head>
 <body class="page-template-default page page-id-10669 wp-custom-logo elementor-default elementor-kit-7 elementor-page elementor-page-10669">
 
@@ -272,7 +291,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<div class="elementor-element elementor-element-a7b2069 e-con-full e-flex elementor-invisible e-con e-child" data-id="a7b2069" data-element_type="container" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;}">
 		<div class="elementor-element elementor-element-65e00ad e-con-full e-flex elementor-invisible e-con e-child" data-id="65e00ad" data-element_type="container" data-settings="{&quot;animation&quot;:&quot;fadeInLeft&quot;,&quot;animation_mobile&quot;:&quot;fadeIn&quot;}">
 				<div class="elementor-element elementor-element-692beaf elementor-widget__width-inherit elementor-widget elementor-widget-text-editor" data-id="692beaf" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
+		<style>@media (min-width: 769px) { /* Para telas de desktop */
+			.break-line {
+				display: none; /* O <br> não aparecerá */
+			}
+		}
+		
+		@media (max-width: 768px) { /* Para telas de dispositivos móveis */
+			.break-line {
+				display: block; /* O <br> aparecerá */
+			}
+		}
+		</style>
+<br class="break-line">
+
+
+					<div class="elementor-widget-container">
 							<p>E o mais importante: com muito sabor!</p>						</div>
 				</div>
 				<div class="elementor-element elementor-element-543c067 elementor-widget__width-inherit elementor-widget elementor-widget-text-editor" data-id="543c067" data-element_type="widget" data-widget_type="text-editor.default">
